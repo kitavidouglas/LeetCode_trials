@@ -1,4 +1,4 @@
-public class MinOperationsToMakeEqualStrings {
+public class Day1 {
 
     public int minOperations(String s1, String s2, String s3) {
         int len1 = s1.length(), len2 = s2.length(), len3 = s3.length();
@@ -41,7 +41,7 @@ public class MinOperationsToMakeEqualStrings {
     }
 
     public static void main(String[] args) {
-        MinOperationsToMakeEqualStrings solution = new MinOperationsToMakeEqualStrings();
+        Day1 solution = new Day1();
         
         // Example usage:
         String s1 = "abc", s2 = "ab", s3 = "abcd";

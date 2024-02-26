@@ -1,5 +1,5 @@
-public class Day3 {
-    public int removeElement(int[] nums, int val) {
+public class removeElement {
+    public int RemoveElement(int[] nums, int val) {
         int count = 0; // Initialize count for elements not equal to val
         
         // Iterate through the array
@@ -17,10 +17,10 @@ public class Day3 {
     }
 
     public static void main(String[] args) {
-        Day3 solution = new Day3();
+        removeElement solution = new removeElement();
         int[] nums = {4,9,7,4};
         int val = 4;
-        int k = solution.removeElement(nums, val);
+        int k = solution.RemoveElement(nums, val);
         System.out.println("Number of elements in nums which are not equal to val: " + k);
         System.out.print("Modified nums array: ");
         for (int i = 0; i < k; i++) {

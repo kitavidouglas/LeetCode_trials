@@ -1,4 +1,4 @@
-public class Day5 {
+public class PalindromeChecker {
     public static boolean isPalindrome(int x) {
         // If x is negative, it cannot be a palindrome
         if (x < 0) {

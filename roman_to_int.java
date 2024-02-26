@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Day6 {
+public class roman_to_int {
     public static int romanToInt(String s) {
         HashMap<Character, Integer> romanValues = new HashMap<>();
         romanValues.put('I', 1);

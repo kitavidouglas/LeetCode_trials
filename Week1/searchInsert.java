@@ -1,3 +1,5 @@
+package Week1;
+
 public class searchInsert {
     public int SearchInsert(int[] nums, int target) {
         for (int i = 0; i < nums.length; i++) {

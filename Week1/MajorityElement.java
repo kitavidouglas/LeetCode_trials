@@ -1,3 +1,5 @@
+package Week1;
+
 public class MajorityElement {
 
     public static int majorityElement(int[] nums) {

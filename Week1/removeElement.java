@@ -1,3 +1,5 @@
+package Week1;
+
 public class removeElement {
     public int RemoveElement(int[] nums, int val) {
         int count = 0; // Initialize count for elements not equal to val

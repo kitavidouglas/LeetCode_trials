@@ -1,3 +1,5 @@
+package Week1;
+
 public class EqualStrings {
 
     public int minOperations(String s1, String s2, String s3) {

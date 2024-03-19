@@ -1,3 +1,5 @@
+package Week1;
+
 public class PalindromeChecker {
     public static boolean isPalindrome(int x) {
         // If x is negative, it cannot be a palindrome

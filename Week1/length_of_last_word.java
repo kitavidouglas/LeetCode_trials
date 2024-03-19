@@ -1,3 +1,5 @@
+package Week1;
+
 public class length_of_last_word {
     public static void main(String[] args) {
         // Example string

@@ -61,3 +61,108 @@ def main():
 
 # Run the main function
 main()
+
+import heapq
+
+class Solution(object):
+    def minOperations(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        heapq.heapify(nums)  # Convert nums into a min-heap
+        operations = 0
+
+        while len(nums) > 1 and nums[0] < k:
+            x = heapq.heappop(nums)  # Smallest element
+            y = heapq.heappop(nums)  # Second smallest element
+            new_value = x * 2 + y  # Apply the operation
+            heapq.heappush(nums, new_value)  # Insert the new value into the heap
+            operations += 1
+
+        return operations if nums[0] >= k else -1  # If all elements are >= k, return operations count, else -1
+
+# Example usage:
+solution = Solution()
+print(solution.minOperations([2, 11, 10, 1, 3], 10))  # Output: 2
+print(solution.minOperations([1, 1, 2, 4, 9], 20))    # Output: 4
+
+
+import heapq
+
+class Solution(object):
+    def minOperations(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        heapq.heapify(nums)  # Convert nums into a min-heap
+        operations = 0
+
+        while len(nums) > 1 and nums[0] < k:
+            x = heapq.heappop(nums)  # Smallest element
+            y = heapq.heappop(nums)  # Second smallest element
+            new_value = x * 2 + y  # Apply the operation
+            heapq.heappush(nums, new_value)  # Insert the new value into the heap
+            operations += 1
+
+        return operations if nums[0] >= k else -1  # If all elements are >= k, return operations count, else -1
+
+# Example usage:
+solution = Solution()
+print(solution.minOperations([2, 11, 10, 1, 3], 10))  # Output: 2
+print(solution.minOperations([1, 1, 2, 4, 9], 20))    # Output: 4
+
+import heapq
+
+class Solution(object):
+    def minOperations(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        heapq.heapify(nums)  # Convert nums into a min-heap
+        operations = 0
+
+        while len(nums) > 1 and nums[0] < k:
+            x = heapq.heappop(nums)  # Smallest element
+            y = heapq.heappop(nums)  # Second smallest element
+            new_value = x * 2 + y  # Apply the operation
+            heapq.heappush(nums, new_value)  # Insert the new value into the heap
+            operations += 1
+
+        return operations if nums[0] >= k else -1  # If all elements are >= k, return operations count, else -1
+
+# Example usage:
+solution = Solution()
+print(solution.minOperations([2, 11, 10, 1, 3], 10))  # Output: 2
+print(solution.minOperations([1, 1, 2, 4, 9], 20))    # Output: 4
+
+import heapq
+
+class Solution(object):
+    def minOperations(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        heapq.heapify(nums)  # Convert nums into a min-heap
+        operations = 0
+
+        while len(nums) > 1 and nums[0] < k:
+            x = heapq.heappop(nums)  # Smallest element
+            y = heapq.heappop(nums)  # Second smallest element
+            new_value = x * 2 + y  # Apply the operation
+            heapq.heappush(nums, new_value)  # Insert the new value into the heap
+            operations += 1
+
+        return operations if nums[0] >= k else -1  # If all elements are >= k, return operations count, else -1
+
+# Example usage:
+solution = Solution()
+print(solution.minOperations([2, 11, 10, 1, 3], 10))  # Output: 2
+print(solution.minOperations([1, 1, 2, 4, 9], 20))    # Output: 4
